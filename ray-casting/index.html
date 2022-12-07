@@ -7,7 +7,12 @@
     <title>Vite App</title>
   </head>
   <body>
-    <canvas id="canvas" width="800" height="600"></canvas>
+    <div style="position: relative;">
+      <canvas id="layer1" width="800" height="600" 
+        style="position: absolute; left: 0; top: 0; z-index: 0;"></canvas>
+      <canvas id="layer2" width="800" height="600" 
+        style="position: absolute; left: 0; top: 0; z-index: 1;"></canvas>
+     </div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
